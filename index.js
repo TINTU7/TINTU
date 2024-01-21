@@ -112,7 +112,7 @@ if(message.content === `${prefix}invite`) {
 `
 HAI DO YOU LOVE USING DOX BOT THEN INVITE IT NOW
 
-[**INVITE LINK**](https://discord.gg/6H9n3ZFtH2)`)
+[**INVITE LINK**](https://discord.com/api/oauth2/authorize?client_id=1071028741511327805&permissions=8&scope=bot)`)
 
 
    .setImage(`https://media.discordapp.net/attachments/890116247822434355/890535152168607744/standard_45.gif`)
