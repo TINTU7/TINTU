@@ -105,14 +105,14 @@ if (message.content.startsWith(`${prefix}say`)) {
 
 if(message.content === `${prefix}invite`) {
  let embed = new Discord.MessageEmbed()
- .setTitle(`__MC BOT__`)
+ .setTitle(`__DOX BOT__`)
  .setColor("AQUA")
    .setThumbnail(message.client.user.displayAvatarURL() )
     .setDescription(
 `
 HAI DO YOU LOVE USING DOX BOT THEN INVITE IT NOW
 
-[**INVITE LINK**](https://discord.gg/RstmWNRFgF)`)
+[**INVITE LINK**](https://discord.gg/6H9n3ZFtH2)`)
 
 
    .setImage(`https://media.discordapp.net/attachments/890116247822434355/890535152168607744/standard_45.gif`)
@@ -124,7 +124,7 @@ HAI DO YOU LOVE USING DOX BOT THEN INVITE IT NOW
 if(message.content === "here"){
 message.channel.send("help")
 }
-if(message.content === '<@953212112308699157>'){
+if(message.content === '<@910710287415113278057>'){
 message.channel.send(`Hai ${message.author.toString()} My Prefix Is **${prefix}** Use ${prefix}help To see Other Commands `)
 }
 if(message.content === `${prefix}help`) {
@@ -138,9 +138,6 @@ THIS BOT WAS FULLY CODED BY TINTU
 `)
 
 .addField(`**__ANNOUNCEMENT CMD__**`, 'ann')
-
-   .addField(`**__WELCOME CMD__**`, ' wc ')
-
 
  .addField(`**__OTHER CMDS__**`, 'help , invite , avatar , ban , kick , say , purge , serverinfo , devinfo , abm , rules ')
 
@@ -167,7 +164,6 @@ if(message.content === `${prefix}cmd`) {
  .setThumbnail(client.user.displayAvatarURL() )
 .addField("__CMD HELP__",
 `>>> announce - ANNOUNCEMENT CMD
-wc - WELCOME MEMBERS
 rules - ANNOUNCE RULES
 help - TO SEE HELP MENU
 invite - TO INVITE ME
@@ -266,34 +262,8 @@ anntext.shift().toLowerCase().split(" ")[4]
  message.reply("You don't have the permission to do that...")
  }
 }
-
-if(message.content.startsWith(`${prefix}wc`))
-if (message.member.hasPermission("MANAGE_MESSAGES"))
-{
- const anntext = message.content.slice("".length).trim().split(/ +/);
-anntext.shift().toLowerCase().split(" ")[1]
- let embed = new Discord.MessageEmbed()
-
-  .setTitle("MIDNIGHT CARTEL")
- .setDescription(`**${anntext.join("")}**
-        You are Welcome to DOX FAMILY
-
-              Has Welcomed By
-                <@992308514661875874>`)
- .setColor("AQUA")
- .setThumbnail(message.guild.iconURL()  )
- .setImage(`${gifArray[Math.floor(Math.random() * gifArray.length)]}`)
- .setFooter(message.guild.name)
-  .setTimestamp()
- message.channel.send(embed)
- message.delete();
- if (!message.member.hasPermission("MANAGE_MESSAGES")) {
- message.reply("You don't have the permission to do that...")
- }
-}
-
-
-if (message.content.startsWith(`${prefix}kick`)) {
+ 
+ if (message.content.startsWith(`${prefix}kick`)) {
  if (message.member.hasPermission("KICK_MEMBERS")) {
  let member = message.mentions.members.first()
  if (!member) message.channel.send("Please mention someone")
