@@ -1,6 +1,5 @@
 module.exports = {
     TOKEN: "",
-    ownerID: ["1004206704994566164", ""],
     botInvite: "",
     supportServer: "",
     status: 'Custom BoT Coming Soon..',
