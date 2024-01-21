@@ -18,8 +18,8 @@ app.listen(port, () => {
 
 
    const activities_list = [
-        "Custom Bot",
-        "Custom",
+        "DOX",
+        "NO WAVES NO FUN",
 
 
         ]; // creates an arraylist containing phrases you want your bot to switch through.
@@ -110,7 +110,7 @@ if(message.content === `${prefix}invite`) {
    .setThumbnail(message.client.user.displayAvatarURL() )
     .setDescription(
 `
-HAI DO YOU LOVE USING MC BOT THEN INVITE IT NOW
+HAI DO YOU LOVE USING DOX BOT THEN INVITE IT NOW
 
 [**INVITE LINK**](https://discord.gg/RstmWNRFgF)`)
 
@@ -154,7 +154,7 @@ THIS BOT WAS FULLY CODED BY TINTU
 
 
 
- .setFooter("MIDNIGHT CARTEL OFFICIAL")
+ .setFooter("DOX DEVELOPMENT")
 
 
  .setTimestamp()
@@ -184,7 +184,7 @@ abm - TO KNOW ABOUT A SPECIFIC USER`)
 
 
 
- .setFooter("MIDNIGHT CARTEL OFFICIAL")
+ .setFooter("DOX DEVELOPMENT")
 
 
  .setTimestamp()
@@ -276,7 +276,7 @@ anntext.shift().toLowerCase().split(" ")[1]
 
   .setTitle("MIDNIGHT CARTEL")
  .setDescription(`**${anntext.join("")}**
-        You are Welcome to MC FAMILY
+        You are Welcome to DOX FAMILY
 
               Has Welcomed By
                 <@992308514661875874>`)
