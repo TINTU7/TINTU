@@ -12,15 +12,8 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
- console.log(`listening at http://localhost:${port}`)}
+console.log(`listening at http://localhost:${port}`)}
 )
-client.once('ready', () => {
-  setTimeout(() => {
-    client.user.setPresence({
-      status: 'dnd',
-    });
-  }, 2000); 
-});
 
 const activities_list = [
         "DOX",
