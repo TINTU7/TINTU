@@ -12,12 +12,17 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`🔗 Listening to DOX: http://localhost:${port}`);
-  console.log(`🔗 Replit URL: https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`);
-})
+ console.log(`listening at http://localhost:${port}`)}
+)
+client.once('ready', () => {
+  setTimeout(() => {
+    client.user.setPresence({
+      status: 'dnd',
+    });
+  }, 2000); 
+});
 
-
-   const activities_list = [
+const activities_list = [
         "DOX",
         "NO WAVES NO FUN",
 
